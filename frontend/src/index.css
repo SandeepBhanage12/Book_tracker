@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Soft gradient background */
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.app {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a 3D effect */
+  background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%); /* Gradient background */
+  transition: transform 0.3s ease-in-out;
+}
+
+.app:hover {
+  transform: scale(1.02); /* Subtle scaling effect */
+}
+
+h1 {
+  text-align: center;
+  color: #4a90e2;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px; /* Spacing between letters for a cleaner look */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+input, select {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #4a90e2;
+}
+
+button {
+  padding: 12px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: #357ab8;
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+button:active {
+  transform: translateY(1px); /* Gives a pressed-in effect when clicked */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  transition: transform 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-5px); /* Slight hover effect for interactivity */
+}
+
+li select {
+  margin-left: 15px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+li select:focus {
+  border-color: #4a90e2;
+}
+
+li button {
+  background: #e74c3c;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  color: white;
+}
+
+li button:hover {
+  background: #c0392b; /* Darker red for hover effect */
+}
+
+li button:active {
+  transform: scale(0.95); /* Slight shrink effect when clicked */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  input, select, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
+
